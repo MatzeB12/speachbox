@@ -179,6 +179,7 @@ class GoodMorningApp(QWidget):
         self.label_greeting = QLabel('Gruß:', self)
         self.label_greeting.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_greeting.setFont(font_greeting)  # Setze die Schriftart für das Gruß-Label
+        self.label_greeting.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
 
         self.label_counter = QLabel('Benutzte Sprachen: 0', self)
         self.label_counter.setAlignment(Qt.AlignmentFlag.AlignCenter)
